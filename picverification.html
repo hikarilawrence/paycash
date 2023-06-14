@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picture Verification Form</title>
+	<link rel="stylesheet" type="text/css" href="Website.css">
+</head>
+<body>
+	<h1>Picture Verification Form</h1>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br>
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone"><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br>
+		<label for="verification-file">Face Verification:</label>
+		<input type="file" id="verification-file" name="verification-file" accept="img*/"><br>
+		<label for="verification-file">ID Picture:</label>
+		<input type="file" id="verification-file" name="verification-file" accept="img*/"><br>
+		<label for="verification-file">Screenshot if your simcard is Verified:</label>
+		<input type="file" id="verification-file" name="verification-file" accept="img*/"><br>
+		<button id="myButton" value="Submit">Submit</button>
+		<script>
+			const button = document.getElementById('myButton');
+			button.addEventListener('click', function() {
+			  alert('Congrats! You are already verified.');
+			  alert('ENJOY USING PAY CASH!');
+			  window.location.href = "Homepage.html"; // Redirect to the second code
+			});
+		</script>
+	</form>
+</body>
+</html>

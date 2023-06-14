@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="Website.css">
+  <script>
+    function validateForm(event) {
+      var contactNumber = document.getElementById("contact-number").value;
+      var password = document.getElementById("password").value;
+
+      if (contactNumber === "" || password === "") {
+        event.preventDefault(); // Prevent the default action of the link
+        alert("Please fill in all the required fields.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <form class="login-form" action="login.php" method="POST">
+    <h2>Login</h2>
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" id="contact-number" name="contact-number" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <a type="button" href="Homepage.html" onclick="validateForm(event)">LOGIN</a>
+  </form>
+</body>
+</html>
